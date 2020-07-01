@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <!-- <meta charset=”UTF-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+    <meta http-equiv=”X-UA-Compatible” content=”ie=edge”> -->
+    <title>Webscrapping in Python</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <h1>Web Scrapping</h1>
+    <table>
+        <tr>
+            {% for heading in table[0]: %}
+            <th>
+                {{ heading }}
+            </th>
+            {% endfor %}
+        </tr>
+        {% for item in table[1:]: %}
+        <tr>
+            {% for cell_item in item: %}
+            <td> {{ cell_item }} </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
